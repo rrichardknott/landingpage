@@ -20,7 +20,7 @@
   object-fit: cover;
   position: absolute;
   transition: opacity 2s ease-in-out;
-  opacity: 0;
+  opacity: 0.5;
   animation: 40s move infinite ease-in-out;
 }
 
