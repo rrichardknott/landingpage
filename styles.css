@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 2s ease-in-out;
+  opacity: 0;
+  animation: 40s move infinite ease-in-out;
+}
+
+.container img.active {
+  opacity: 0.5;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  z-index: 2;
+  font-size: 22px;
+}
+
+#logo {
+  color: white;
+}
+
+nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fa-fire-flame-simple {
+  color: brown;
+  font-size: 24px;
+}
+
+#social i {
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  height: 100%;
+}
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 100;
+  font-family: "Jacques Francois Shadow", cursive;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 70px;
+  font-weight: 100;
+  font-family: "Cormorant Infant", serif;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 50%;
+}
